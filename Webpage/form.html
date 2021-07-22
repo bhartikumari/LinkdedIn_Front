@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(146, 68, 248);
+      }
+      .main {
+        width: 400px;
+        margin: 100px auto 0px auto;
+      }
+      h2 {
+        text-align: center;
+        padding: 20px;
+        font-family: sans-serif;
+      }
+      .reg {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        font-size: 18px;
+        border-radius: 10px;
+        border: 1px solid rgb(243, 202, 166);
+        box-shadow: 2px 2px 15px;
+        color: white;
+      }
+      #reg1 {
+        margin: 40px;
+      }
+      label {
+        font-family: sans-serif;
+        font-size: 18px;
+      }
+      #name {
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        outline: 0;
+        padding: 5px;
+        background-color: white;
+      }
+      #submit {
+        width: 200px;
+        padding: 5px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: 600;
+        border-radius: 3px;
+        background-color: palevioletred;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="reg">
+        <h2>Registration Here</h2>
+        <form id="reg1" method="POST" action="connect.php">
+          <label> First Name</label>
+          <br />
+          <input
+            type="text"
+            name="fname"
+            id="name"
+            placeholder="Enter Your Name"
+          />
+          <br /><br />
+          <label for=""> Last Name</label>
+          <br />
+          <input
+            type="text"
+            name="lname"
+            id="name"
+            placeholder="Enter Your Name"
+          />
+          <br /><br />
+          <label for="">Your Age: </label>
+          <br />
+          <input type="number" name="age" id="name" placeholder="Your Age" />
+          <br /><br />
+          <label for=""> Email: </label>
+          <br />
+          <input
+            type="email"
+            name="email"
+            id="name"
+            placeholder="Enter Your Email"
+          />
+          <br /><br />
+          <label for="">Gender: </label>
+          <br />
+          &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" id="male" />
+          &nbsp;
+          <span id="male">Male</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" name="gender" id="Female" />
+          &nbsp;
+          <span id="Female">Female</span>
+          <br /><br />
+          <label for=""> Known Language: </label>
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="lang" id="hindi" />
+          &nbsp;
+          <span id="hindi">Hindi</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="lang" id="eng" />
+          &nbsp;
+          <span id="eng">English</span>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="lang" id="urdu" />
+          &nbsp;
+          <span id="urdu">Urdu</span>
+          <br /><br />
+          <input type="submit" value="submit" name="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
